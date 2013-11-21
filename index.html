@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Your spam solution...</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="jquery.min.js"></script>
+<link href="bootstrap.min.css" rel="stylesheet"></link>
+<style>
+label {font-weight:normal;}
+#update {display:none}
+#header{background:#DFF5F5}
+#main{padding-top:160px}
+#navctrl{padding-top:30px}
+#about{padding:10px;background:#DFF5F5;}
+</style>
+</head>
+<body>
+<script>
+var hash = parseInt( window.location.href.slice( window.location.href.indexOf('?') + 1 ) );
+if( hash ) {
+	var num = hash;
+	var options = [];
+	for ( var i = 59; i >= 0; i-- ) {
+		pow = Math.pow( 2,i );
+		if( num >= pow ) {
+			options[ i ] = true;
+			num = num - pow;
+		} else {
+			options[ i ] = false;
+		}
+	}
+}
+</script>
+
+<header id="header" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+	<div class="container">
+		<h1>About your spam solution &hellip;</h1>
+		<p><a class="btn btn-primary btn-sm active" role="button" href="index.html">Reset the form</a> <span id="update"></span></p>
+	</div>
+</header>
+
+<div id="main" class="container bs-header">
+
+	<div class="row">
+
+		<div class="col-md-10" role="main">
+
+			<h2>Your post advocates a</h2>
+
+			<p><label><input type="checkbox" /> technical </label>
+			<label><input type="checkbox" /> legislative </label>
+			<label><input type="checkbox" /> market-based </label>
+			<label><input type="checkbox" /> vigilante </label></p>
+			<p>approach to fighting spam. Your idea will not work. Here is why it won't work. (One or more of the following may apply to
+			your particular idea, and it may have other flaws which used to vary from state to state before a bad federal law was passed.)
+			
+			<h2>It won't work because</h2>
+
+			<p><label><input type="checkbox" /> Spammers can easily use it to harvest email addresses </label><br/>
+			<label><input type="checkbox" /> Mailing lists and other legitimate email uses would be affected </label><br/>
+			<label><input type="checkbox" /> No one will be able to find the guy or collect the money </label><br/>
+			<label><input type="checkbox" /> It is defenseless against brute force attacks </label><br/>
+			<label><input type="checkbox" /> It will stop spam for two weeks and then we'll be stuck with it </label><br/>
+			<label><input type="checkbox" /> Users of email will not put up with it </label><br/>
+			<label><input type="checkbox" /> Microsoft will not put up with it </label><br/>
+			<label><input type="checkbox" /> The police will not put up with it </label><br/>
+			<label><input type="checkbox" /> Requires too much cooperation from spammers </label><br/>
+			<label><input type="checkbox" /> Requires immediate total cooperation from everybody at once </label><br/>
+			<label><input type="checkbox" /> Many email users cannot afford to lose business or alienate potential employers </label><br/>
+			<label><input type="checkbox" /> Spammers don't care about invalid addresses in their lists </label><br/>
+			<label><input type="checkbox" /> Anyone could anonymously destroy anyone else's career or business </label></p>
+
+			<h2>Specifically, your plan fails to account for</h2>
+
+			<p><label><input type="checkbox" /> Laws expressly prohibiting it </label><br/>
+			<label><input type="checkbox" /> Lack of centrally controlling authority for email </label><br/>
+			<label><input type="checkbox" /> Open relays in foreign countries </label><br/>
+			<label><input type="checkbox" /> Ease of searching tiny alphanumeric address space of all email addresses </label><br/>
+			<label><input type="checkbox" /> Asshats </label><br/>
+			<label><input type="checkbox" /> Jurisdictional problems </label><br/>
+			<label><input type="checkbox" /> Unpopularity of weird new taxes </label><br/>
+			<label><input type="checkbox" /> Public reluctance to accept weird new forms of money </label><br/>
+			<label><input type="checkbox" /> Huge existing software investment in SMTP </label><br/>
+			<label><input type="checkbox" /> Susceptibility of protocols other than SMTP to attack </label><br/>
+			<label><input type="checkbox" /> Willingness of users to install OS patches received by email </label><br/>
+			<label><input type="checkbox" /> Armies of worm riddled broadband-connected Windows boxes </label><br/>
+			<label><input type="checkbox" /> Eternal arms race involved in all filtering approaches </label><br/>
+			<label><input type="checkbox" /> Extreme profitability of spam </label><br/>
+			<label><input type="checkbox" /> Joe jobs and/or identity theft </label><br/>
+			<label><input type="checkbox" /> Technically illiterate politicians </label><br/>
+			<label><input type="checkbox" /> Extreme stupidity on the part of people who do business with spammers </label><br/>
+			<label><input type="checkbox" /> Dishonesty on the part of spammers themselves </label><br/>
+			<label><input type="checkbox" /> Bandwidth costs that are unaffected by client filtering </label><br/>
+			<label><input type="checkbox" /> Outlook </label></p>
+
+			<h2>and the following philosophical objections may also apply:</h2>
+
+			<p><label><input type="checkbox" /> Ideas similar to yours are easy to come up with, yet none have ever been shown practical </label><br/>
+			<label><input type="checkbox" /> Any scheme based on opt-out is unacceptable </label><br/>
+			<label><input type="checkbox" /> SMTP headers should not be the subject of legislation </label><br/>
+			<label><input type="checkbox" /> Blacklists suck </label><br/>
+			<label><input type="checkbox" /> Whitelists suck </label><br/>
+			<label><input type="checkbox" /> We should be able to talk about Viagra without being censored </label><br/>
+			<label><input type="checkbox" /> Countermeasures should not involve wire fraud or credit card fraud </label><br/>
+			<label><input type="checkbox" /> Countermeasures should not involve sabotage of public networks </label><br/>
+			<label><input type="checkbox" /> Countermeasures must work if phased in gradually </label><br/>
+			<label><input type="checkbox" /> Sending email should be free </label><br/>
+			<label><input type="checkbox" /> Why should we have to trust you and your servers? </label><br/>
+			<label><input type="checkbox" /> Incompatiblity with open source or open source licenses </label><br/>
+			<label><input type="checkbox" /> Feel-good measures do nothing to solve the problem </label><br/>
+			<label><input type="checkbox" /> Temporary/one-time email addresses are cumbersome </label><br/>
+			<label><input type="checkbox" /> I don't want the government reading my email </label><br/>
+			<label><input type="checkbox" /> Killing them that way is not slow and painful enough </label></p>
+
+			<h2>Furthermore, this is what I think about you:</h2>
+
+			<p><label><input type="checkbox" /> Sorry dude, but I don't think it would work. </label><br/>
+			<label><input type="checkbox" /> This is a stupid idea, and you're a stupid person for suggesting it. </label><br/>
+			<label><input type="checkbox" /> Nice try, assh0le! I'm going to find out where you live and burn your house down! </label></p>
+			
+		</div>
+
+	</div>
+
+</div>
+
+<div id="about">
+	<div class="container"<
+		<p><small>Just for fun. From <a href="http://craphound.com/spamsolutions.txt">Cory Doctorow's spamsolutions</a>, by <a href="http://ozh.org/">ozh</a>.</small></p>
+	</div>
+</div>
+
+<script>
+
+if( hash ) {
+	$( "input[type=checkbox]" ).each(function( index, el ) {
+		$( el ).prop('checked', options[index] );
+		$( el ).prop('disabled', true );
+		$( el ).parent().css( 'font-weight', options[index] ? 'bold' : 'normal' );
+	});
+} else {
+	$('#update').css( 'display', 'inline' );
+	var options = [];
+	$( "input[type=checkbox]" ).each(function( index, el ) {
+		$( el ).data( 'id', index );
+	});
+
+	$( "input[type=checkbox]" ).click( function( i, e ) {
+		var chk = this.checked;
+		options[ $(this).data('id') ] = chk;
+		$(this).parent().css( 'font-weight', chk ? 'bold' : 'normal' );
+		update();
+	});
+}
+
+function update() {
+	var result = 0;
+	for ( var i = 59; i >= 0; i-- ) {
+		if( options[ i ] ) {
+			result += Math.pow(2,i);
+		}
+	$('#update').html( 'Bookmark this new form: <a 	href="index.html?'+result+'">?' + result + '</a>' );
+	}	
+}
+
+</script>
+
+</body>
+</html>
